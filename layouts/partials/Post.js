@@ -28,7 +28,7 @@ const Post = ({ post }) => {
             >
               <Link
                 className="capitalize"
-                href={`/categories/${tag.replace(" ", "-")}`}
+                href={`/canton/${tag.replace(" ", "-")}`}
               >
                 {tag}
               </Link>
@@ -64,7 +64,7 @@ const Post = ({ post }) => {
         className="btn btn-outline-primary mt-4"
         href={`/${blog_folder}/${post.slug}`}
       >
-        Read More
+        Lire la suite
       </Link>
     </div>
   );

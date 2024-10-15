@@ -12,12 +12,12 @@ const InnerPagination = ({ posts, date }) => {
     postIndex == lastIndex ? undefined : orderedPosts[postIndex + 1].slug;
   const prevButton = prev && (
     <Link href={prev} className={"btn btn-primary"}>
-      Prev
+      Précédent
     </Link>
   );
   const nextButton = next && (
     <Link href={next} className={"btn btn-primary"}>
-      Next
+      Suivant
     </Link>
   );
 

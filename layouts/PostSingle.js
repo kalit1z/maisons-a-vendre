@@ -3,7 +3,6 @@ import Base from "@layouts/Baseof";
 import InnerPagination from "@layouts/components/InnerPagination";
 import dateFormat from "@lib/utils/dateFormat";
 import { markdownify } from "@lib/utils/textConverter";
-import { DiscussionEmbed } from "disqus-react";
 import { MDXRemote } from "next-mdx-remote";
 import { useTheme } from "next-themes";
 import Image from "next/image";
@@ -12,7 +11,6 @@ import { FaRegCalendar, FaUserAlt } from "react-icons/fa";
 import Post from "./partials/Post";
 import Sidebar from "./partials/Sidebar";
 import shortcodes from "./shortcodes/all";
-const { disqus } = config;
 const { meta_author } = config.metadata;
 
 const PostSingle = ({
@@ -24,19 +22,18 @@ const PostSingle = ({
   allCategories,
   relatedPosts,
 }) => {
-  let { description, title, date, image, categories } = frontmatter;
-  description = description ? description : content.slice(0, 120);
+  let { title, date, image, categories, metaTitle, metaDescription } = frontmatter;
+  metaTitle = metaTitle || title;
 
   const { theme } = useTheme();
   const author = frontmatter.author ? frontmatter.author : meta_author;
-  // Local copy so we don't modify global config.
   let disqusConfig = config.disqus.settings;
   disqusConfig.identifier = frontmatter.disqusId
     ? frontmatter.disqusId
     : config.settings.blog_folder + "/" + slug;
 
   return (
-    <Base title={title} description={description}>
+    <Base title={metaTitle} description={metaDescription}>
       <section className="section single-blog mt-6">
         <div className="container">
           <div className="row">
@@ -89,22 +86,10 @@ const PostSingle = ({
                     {dateFormat(date)}
                   </li>
                 </ul>
-                <div className="content mb-16">
+                <div className="content mb-16 mt-6">
                   <MDXRemote {...mdxContent} components={shortcodes} />
                 </div>
-                {config.settings.InnerPaginationOptions.enableBottom && (
-                  <InnerPagination posts={posts} date={date} />
-                )}
               </article>
-              <div className="mt-16">
-                {disqus.enable && (
-                  <DiscussionEmbed
-                    key={theme}
-                    shortname={disqus.shortname}
-                    config={disqusConfig}
-                  />
-                )}
-              </div>
             </div>
             <Sidebar
               posts={posts.filter((post) => post.slug !== slug)}
@@ -115,7 +100,7 @@ const PostSingle = ({
 
         {/* Related posts */}
         <div className="container mt-20">
-          <h2 className="section-title">Related Posts</h2>
+          <h2 className="section-title">Articles Connexes</h2>
           <div className="row mt-16">
             {relatedPosts.slice(0, 3).map((post, index) => (
               <div key={"post-" + index} className="mb-12 lg:col-4">

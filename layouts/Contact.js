@@ -28,7 +28,7 @@ const Contact = ({ data }) => {
           </div>
           <div className="contact-form-wrapper rounded border border-border p-6 dark:border-darkmode-border lg:col-6">
             <h2>
-              Send Us A
+                Envoyez-nous un
               <span className="ml-1.5 inline-flex items-center text-primary">
                 Message
                 <BsArrowRightShort />
@@ -41,7 +41,7 @@ const Contact = ({ data }) => {
             >
               <div className="mb-6">
                 <label className="mb-2 block font-secondary" htmlFor="name">
-                  Full name
+                Nom complet
                   <small className="font-secondary text-sm text-primary">
                     *
                   </small>
@@ -56,7 +56,7 @@ const Contact = ({ data }) => {
               </div>
               <div className="mb-6">
                 <label className="mb-2 block font-secondary" htmlFor="email">
-                  Email Address
+                  Email
                   <small className="font-secondary text-sm text-primary">
                     *
                   </small>
@@ -71,7 +71,7 @@ const Contact = ({ data }) => {
               </div>
               <div className="mb-6">
                 <label className="mb-2 block font-secondary" htmlFor="subject">
-                  Subject
+                  Objet
                   <small className="font-secondary text-sm text-primary">
                     *
                   </small>
@@ -86,21 +86,21 @@ const Contact = ({ data }) => {
               </div>
               <div className="mb-6">
                 <label className="mb-2 block font-secondary" htmlFor="message">
-                  Your Message Here
+                    Votre message ici
                   <small className="font-secondary text-sm text-primary">
                     *
                   </small>
                 </label>
                 <textarea
                   className="form-textarea w-full"
-                  placeholder="Hello I’m Mr ‘x’ from………….."
+                  placeholder="Bonjour, je suis M. ‘x’ de………….."
                   rows="7"
                 />
               </div>
               <input
                 className="btn btn-primary"
                 type="submit"
-                value="Send Now"
+                value="Envoyer"
               />
             </form>
           </div>

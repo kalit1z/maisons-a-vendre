@@ -7,10 +7,38 @@ const Pagination = ({ section, currentPage, totalPages }) => {
   const hasPrevPage = currentPage > 1;
   const hasNextPage = totalPages > currentPage;
 
-  let pageList = [];
-  for (let i = 1; i <= totalPages; i++) {
-    pageList.push(i);
-  }
+  const getPageList = () => {
+    const pageList = [];
+    const maxVisiblePages = 3;
+    let startPage = Math.max(1, currentPage - Math.floor(maxVisiblePages / 2));
+    let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
+
+    if (endPage - startPage + 1 < maxVisiblePages) {
+      startPage = Math.max(1, endPage - maxVisiblePages + 1);
+    }
+
+    if (startPage > 1) {
+      pageList.push(1);
+      if (startPage > 2) {
+        pageList.push("...");
+      }
+    }
+
+    for (let i = startPage; i <= endPage; i++) {
+      pageList.push(i);
+    }
+
+    if (endPage < totalPages) {
+      if (endPage < totalPages - 1) {
+        pageList.push("...");
+      }
+      pageList.push(totalPages);
+    }
+
+    return pageList;
+  };
+
+  const pageList = getPageList();
 
   return (
     <>
@@ -31,14 +59,14 @@ const Pagination = ({ section, currentPage, totalPages }) => {
             >
               <>
                 <BsArrowLeftShort />
-                <span className="ml-3 text-lg ">Previous</span>
+                <span className="ml-3 text-lg "></span>
               </>
             </Link>
           ) : (
-            <span className="flex items-center rounded-full px-2 py-1 text-3xl font-bold text-dark dark:text-darkmode-light ">
+            <span className="flex items-center rounded-full px-2 py-1 text-3xl font-bold text-dark dark:text-darkmode-light opacity-50">
               <>
                 <BsArrowLeftShort />
-                <span className="ml-3 text-lg">Previous</span>
+                <span className="ml-3 text-lg"></span>
               </>
             </span>
           )}
@@ -53,10 +81,14 @@ const Pagination = ({ section, currentPage, totalPages }) => {
                 >
                   {pagination}
                 </span>
+              ) : pagination === "..." ? (
+                <span className="inline-flex h-[38px] items-center justify-center px-2 font-secondary text-lg font-bold leading-none text-dark dark:text-darkmode-light">
+                  {pagination}
+                </span>
               ) : (
                 <Link
                   href={
-                    i === 0
+                    pagination === 1
                       ? `${section ? "/" + section : "/"}`
                       : `${section ? "/" + section : ""}/page/${pagination}`
                   }
@@ -77,14 +109,14 @@ const Pagination = ({ section, currentPage, totalPages }) => {
               className="ml-4 flex items-center rounded-full px-2 py-1 text-3xl font-bold leading-none text-dark dark:text-darkmode-light"
             >
               <>
-                <span className="mr-3 text-lg">Next</span>
+                <span className="mr-3 text-lg">Suivant</span>
                 <BsArrowRightShort />
               </>
             </Link>
           ) : (
-            <span className="ml-4 flex items-center rounded-full px-2 py-1 text-3xl font-bold text-dark dark:text-darkmode-light">
+            <span className="ml-4 flex items-center rounded-full px-2 py-1 text-3xl font-bold text-dark dark:text-darkmode-light opacity-50">
               <>
-                <span className="mr-3 text-lg">Next</span>
+                <span className="mr-3 text-lg">Suivant</span>
                 <BsArrowRightShort />
               </>
             </span>

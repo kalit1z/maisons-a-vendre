@@ -1,20 +1,17 @@
 ---
-title: "Let’s, Talk </br> About You"
-description: "meta description"
-phone: "+211234565523"
-mail: "info@email.com"
-location: "9567 Turner Trace Apt. BC C3G8A4"
-form_action: "#"
+title: "Discutons </br> de Votre Projet"
+description: "Contactez-nous pour discuter de vos besoins immobiliers et découvrir comment nous pouvons vous aider à atteindre vos objectifs."
+phone: "+41788324223"
+mail: "info@maisons-a-vendre.ch"
+form_action: "https://formspree.io/f/xkndjywo"
 layout: "contact"
 addresses:
   - icon: FaUserAlt
-    content: +211234565523
-    link: tel:+211234565523
+    content: +41788324223
+    link: tel:+41788324223
   - icon: FaMapMarkerAlt
-    content: info@email.com
-    link: mailto:info@email.com
-  - icon: FaLocation
-    content: 9567 Turner Trace Apt. BC C3G8A4
+    content: info@maisons-a-vendre.ch
+    link: mailto:info@maisons-a-vendre.ch
 
 draft: false
 ---

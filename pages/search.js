@@ -32,7 +32,7 @@ const SearchPage = () => {
       <div className="section">
         <div className="container">
           <h1 className="h2 mb-8 text-center">
-            Search results for <span className="text-primary">{query.key}</span>
+            Résultats de recherche pour <span className="text-primary">{query.key}</span>
           </h1>
           {searchResults.length > 0 ? (
             <div className="row">
@@ -44,7 +44,7 @@ const SearchPage = () => {
             </div>
           ) : (
             <div className="py-24 text-center text-h3 shadow">
-              No Search Found
+              Aucun résultat de recherche 
             </div>
           )}
         </div>

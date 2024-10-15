@@ -1,40 +1,29 @@
 {
   "main": [
     {
-      "name": "Home",
+      "name": "Acceuil",
       "url": "/"
     },
     {
-      "name": "About",
+      "name": "à propos",
       "url": "/about"
-    },
-    {
-      "name": "Elements",
-      "url": "/elements"
     },
     {
       "name": "Contact",
       "url": "/contact"
     },
     {
-      "name": "Pages",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Categories",
-          "url": "/categories"
-        }
-      ]
+      "name": "En savoir plus",
+      "url": "https://www.fastercook.fr/immo"
+    },
+    {
+      "name": "Cantons",
+      "url": "/canton"
     }
   ],
   "footer": [
     {
-      "name": "Home",
-      "url": "/"
-    },
-    {
-      "name": "About",
+        "name": "À propos",
       "url": "/about"
     },
     {
@@ -42,8 +31,8 @@
       "url": "/contact"
     },
     {
-      "name": "Privacy Policy",
-      "url": "#"
+      "name": "Mentions Légales",
+      "url": "/legal"
     }
   ]
 }

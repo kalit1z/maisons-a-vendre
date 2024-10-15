@@ -1,4 +1,9 @@
+# *
 User-agent: *
 Allow: /
 
-Disallow: /api/*
+# Host
+Host: https://www.maisons-a-vendre.ch
+
+# Sitemaps
+Sitemap: https://www.maisons-a-vendre.ch/sitemap.xml
