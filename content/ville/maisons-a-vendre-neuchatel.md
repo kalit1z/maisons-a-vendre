@@ -5,7 +5,7 @@ metaDescription: "Découvrez pourquoi Neuchâtel est la ville idéale pour achet
 date: 2024-10-15T01:00:00Z
 image: /images/post/ne/acheter-maison-neuchatel.webp
 categories: ["neuchatel"]
-featured: true
+featured: false
 draft: false
 ---
 

@@ -5,7 +5,7 @@ metaDescription: "Découvrez pourquoi Delémont est la ville idéale pour achete
 date: 2024-10-15T01:00:00Z
 image: /images/post/ju/acheter-maison-delemont.webp
 categories: ["jura"]
-featured: true
+featured: false
 draft: false
 ---
 

@@ -5,7 +5,7 @@ metaDescription: "Découvrez pourquoi Rolle est une ville charmante pour acheter
 date: 2024-10-15T01:00:00Z
 image: /images/post/vd/acheter-maison-rolle.webp
 categories: ["vaud"]
-featured: true
+featured: false
 draft: false
 ---
 

@@ -5,7 +5,7 @@ metaDescription: "Découvrez pourquoi Glovelier est une ville idéale pour achet
 date: 2024-10-15T01:00:00Z
 image: /images/post/ju/acheter-maison-glovelier.webp
 categories: ["jura"]
-featured: true
+featured: false
 draft: false
 ---
 

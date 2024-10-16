@@ -5,7 +5,7 @@ metaDescription: "Découvrez pourquoi La Chaux-de-Fonds est une ville idéale po
 date: 2024-10-15T01:00:00Z
 image: /images/post/ne/acheter-maison-chaux-de-fonds.webp
 categories: ["neuchatel"]
-featured: true
+featured: false
 draft: false
 ---
 

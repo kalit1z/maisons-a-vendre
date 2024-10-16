@@ -5,7 +5,7 @@ metaDescription: "Découvrez pourquoi Onex est la commune idéale pour acheter u
 date: 2024-10-15T01:00:00Z
 image: /images/post/ge/acheter-maison-onex.webp
 categories: ["geneve"]
-featured: true
+featured: false
 draft: false
 ---
 

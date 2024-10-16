@@ -5,7 +5,7 @@ metaDescription: "Découvrez pourquoi La Tour-de-Peilz est une ville prisée pou
 date: 2024-10-15T01:00:00Z
 image: /images/post/vd/acheter-maison-la-tour-de-peilz.webp
 categories: ["vaud"]
-featured: true
+featured: false
 draft: false
 ---
 

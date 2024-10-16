@@ -5,7 +5,7 @@ metaDescription: "Découvrez pourquoi Echallens est une ville idéale pour achet
 date: 2024-10-15T01:00:00Z
 image: /images/post/vd/acheter-maison-echallens.webp
 categories: ["vaud"]
-featured: true
+featured: false
 draft: false
 ---
 

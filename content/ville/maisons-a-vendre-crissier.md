@@ -5,7 +5,7 @@ metaDescription: "Découvrez pourquoi Crissier est une ville prisée pour l'acha
 date: 2024-10-15T01:00:00Z
 image: /images/post/vd/acheter-maison-crissier.webp
 categories: ["vaud"]
-featured: true
+featured: false
 draft: false
 ---
 

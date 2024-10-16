@@ -5,7 +5,7 @@ metaDescription: "Découvrez pourquoi Prilly est une ville idéale pour acheter 
 date: 2024-10-15T01:00:00Z
 image: /images/post/vd/acheter-maison-prilly.webp
 categories: ["vaud"]
-featured: true
+featured: false
 draft: false
 ---
 

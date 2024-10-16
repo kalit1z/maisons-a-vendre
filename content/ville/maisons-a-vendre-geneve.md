@@ -5,7 +5,7 @@ metaDescription: "Découvrez pourquoi Genève est la ville idéale pour acheter 
 date: 2024-10-15T01:00:00Z
 image: /images/post/ge/acheter-maison-geneve.webp
 categories: ["geneve"]
-featured: true
+featured: false
 draft: false
 ---
 

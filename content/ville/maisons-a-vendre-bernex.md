@@ -5,7 +5,7 @@ metaDescription: "Découvrez pourquoi Bernex est l'endroit idéal pour acheter u
 date: 2024-10-15T01:00:00Z
 image: /images/post/ge/acheter-maison-bernex.webp
 categories: ["geneve"]
-featured: true
+featured: false
 draft: false
 ---
 

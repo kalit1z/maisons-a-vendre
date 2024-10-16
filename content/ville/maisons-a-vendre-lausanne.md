@@ -5,7 +5,7 @@ metaDescription: "Découvrez pourquoi Lausanne est la ville idéale pour acheter
 date: 2024-10-15T01:00:00Z
 image: /images/post/vd/acheter-maison-lausanne.webp
 categories: ["vaud"]
-featured: true
+featured: false
 draft: false
 ---
 

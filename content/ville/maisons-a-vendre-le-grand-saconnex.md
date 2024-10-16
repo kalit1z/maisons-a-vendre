@@ -5,7 +5,7 @@ metaDescription: "Découvrez pourquoi Le Grand-Saconnex est la commune idéale p
 date: 2024-10-15T01:00:00Z
 image: /images/post/ge/acheter-maison-le-grand-saconnex.webp
 categories: ["geneve"]
-featured: true
+featured: false
 draft: false
 ---
 

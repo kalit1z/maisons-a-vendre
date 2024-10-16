@@ -5,7 +5,7 @@ metaDescription: "Découvrez pourquoi Cornol est une commune idéale pour achete
 date: 2024-10-15T01:00:00Z
 image: /images/post/ju/acheter-maison-cornol.webp
 categories: ["jura"]
-featured: true
+featured: false
 draft: false
 ---
 

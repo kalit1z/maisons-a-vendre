@@ -5,7 +5,7 @@ metaDescription: "Explorez le marché immobilier de Saignelégier et découvrez 
 date: 2024-10-15T01:00:00Z
 image: /images/post/ju/acheter-maison-saignelegier.webp
 categories: ["jura"]
-featured: true
+featured: false
 draft: false
 ---
 

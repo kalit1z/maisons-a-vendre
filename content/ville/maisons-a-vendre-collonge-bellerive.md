@@ -5,7 +5,7 @@ metaDescription: "Découvrez pourquoi Collonge-Bellerive est la commune idéale 
 date: 2024-10-15T01:00:00Z
 image: /images/post/ge/acheter-maison-collonge-bellerive.webp
 categories: ["geneve"]
-featured: true
+featured: false
 draft: false
 ---
 

@@ -5,7 +5,7 @@ metaDescription: "Découvrez pourquoi Corban est un village idéal pour acheter 
 date: 2024-10-15T01:00:00Z
 image: /images/post/ju/acheter-maison-corban.webp
 categories: ["jura"]
-featured: true
+featured: false
 draft: false
 ---
 

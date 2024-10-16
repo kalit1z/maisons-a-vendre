@@ -5,7 +5,7 @@ metaDescription: "Découvrez pourquoi Yverdon-les-Bains est une ville prisée po
 date: 2024-10-15T01:00:00Z
 image: /images/post/vd/acheter-maison-yverdon.webp
 categories: ["vaud"]
-featured: true
+featured: false
 draft: false
 ---
 
